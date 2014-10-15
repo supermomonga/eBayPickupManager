@@ -1,0 +1,16 @@
+﻿<Window x:Class="eBayPickupManager.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="eBay Package Manager" Height="503" Width="711">
+    <Grid>
+        <StackPanel x:Name="MainPanel" Margin="10">
+            <StackPanel.Resources>
+                <Style TargetType="Button">
+                    <Setter Property="Margin" Value="0,0,0,10" />
+                </Style>
+            </StackPanel.Resources>
+            <Button x:Name="openItemListWindowButton" Content="未発送商品一覧を見る" />
+            <Button x:Name="openConfigWindowButton" Content="ログイン情報を設定" Click="openConfigWindowButton_Click" />
+        </StackPanel>
+    </Grid>
+</Window>
